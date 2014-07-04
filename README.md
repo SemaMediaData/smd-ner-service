@@ -25,6 +25,8 @@ mysql-connector-java-bin.jar
 
 xmlwriter.jar
 
+jcseg lib
+
 Stanford NER lib
 
 

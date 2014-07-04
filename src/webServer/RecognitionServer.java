@@ -1,0 +1,29 @@
+// Copyright (c) 2014 SemaMediaData. All Rights Reserved.
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+
+package webServer;
+
+import javax.swing.JOptionPane;
+import javax.xml.ws.Endpoint;
+
+
+public class RecognitionServer {
+	static String url = "http://127.0.0.1:8090/RecognitionServer?wsdl";
+	
+	public void startServer()
+	{
+		Endpoint endpoint = Endpoint.publish(url, new NERService());
+		JOptionPane.showMessageDialog(null, "Shutdown Server");
+		endpoint.stop();
+	}
+}
