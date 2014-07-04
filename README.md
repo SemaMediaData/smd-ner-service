@@ -18,9 +18,13 @@ Please see the file LICENCE.txt for details.
 REQUIREMENTS
 
 to compile the software you have to download and include the following libraries:
+
 commons-io-1.4.jar
+
 mysql-connector-java-bin.jar
+
 xmlwriter.jar
+
 Stanford NER lib
 
 
